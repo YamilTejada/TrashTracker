@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TrashTracker</title>
+    <script src="https://kit.fontawesome.com/40302bbecc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Imagenes/imgLogo.png">
+</head>
+
+<style>
+    </style>
+<body>
+
+
+    <header class="main-header">
+
+        <div class="main-header__logo">
+        <a href="#hero"><img src="Imagenes/imgLogo.png" alt="Logo" width="80px"></a>
+        </div>
+
+
+        <!-- Menu Hamburguesa -->
+        <button class="main-header__toggle" aria-label="Abrir menú">
+        <span class="main-header__toggle-bar"></span>
+        <span class="main-header__toggle-bar"></span>
+        <span class="main-header__toggle-bar"></span>
+        </button>
+
+        <!--Puedes guardarlo dentro deun main-header__menu o darle a cada uno-->
+
+        <nav class="main-header__nav main-header__menu">
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#problem">Problema</a></li>
+            <li><a href="#how-it-works">Funcionamiento</a></li>
+            <li><a href="#rewards">Recompensas</a></li>
+            <li><a href="#faq">Preguntas</a></li>
+        </ul>
+        </nav>
+
+        <div class="main-header__actions main-header__menu">
+        <ul>
+            <li><a href="#" class="login">Iniciar Sesión</a></li>
+            <li><a href="#" class="sign-in">Registrarse Gratis</a></li>
+        </ul>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <section class="hero-section" id="hero">
+
+            <article class="hero-section__content">
+                <h1>Reporta. Colabora. <span>Gana por cuidar Lima.</span></h1>
+                <p>Únete a la comunidad que está limpiando la ciudad, un reporte a la vez. Tu acción tiene premio. Sé parte del cambio.</p>
+
+                <article class="hero-section__actions">
+                <ul>
+                    <li><a href="#" class="register">Regístrate Gratis</a></li>
+                    <li><a href="#" class="function">Ver Cómo Funciona</a></li>
+                </ul>
+                </article>
+            </article>
+
+            
+        </section>
+
+        <section class="problem-section" id="problem">
+
+            <div class="problem-section__info">
+
+                <small>EL PROBLEMA ES REAL</small>
+                <h2>Lima necesita nuestra ayuda.</h2>
+                <p>Basado en datos de OEFA y MINAM, la situación es crítica. Pero juntos, podemos cambiarla.</p>
+
+            </div>
+            
+            <article class="problem-section__data">
+                
+                <div class="stat-card">
+                    <h1 class="stat-card__number">9,400+</h1> 
+                    <h3 class="stat-card__title">Toneladas de Residuos</h3>
+                    <p class="stat-card__description">Se genera en Lima Metropolitana*cada día*.</p>
+                </div>
+
+                <div class="stat-card">
+                    <h1 class="stat-card__number">40%</h1>
+                    <h3 class="stat-card__title">Sin Destino Adecuado</h3>
+                    <p class="stat-card__description">Termina en botaderos informales, ríos y playas.</p>
+                </div>
+
+                <div class="stat-card">
+                    <h1 class="stat-card__number">165+</h1>
+                    <h3 class="stat-card__title">Zona Críticas</h3>
+                    <p class="stat-card__description">Identificadas que afectan nuestra salud y entorno.</p>
+                </div>
+  
+            </article>
+
+            <div class="problem-section__info2">
+
+                    <h3>TrashTracker es la Conexión que Faltaba</h3>
+                    <p>Creamos un puente digital directo entre <span>ciudadanos comprometidos</span> (como tú), <span>municipalidades</span> que necesitan datos precisos y ONGs que organizan la acción.</p>
+
+                </div>
+        </section>
+        
+        <section class="how-it-works-section" id="how-it-works">
+
+            <article class="how-it-works-info">
+                <small>ES SIMPLE</small>
+                <h2>Tu acción genera impacto real en 3 pasos</h2>
+            </article>
+            
+
+            <article class="how-it-works-section__steps-grid">
+                
+                <div class="step-card">
+                    <div class="step-card__icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3 class="step-card__title">1. Reporta y Geolocaliza</h3>
+                    <p class="step-card__description">Toma una foto de un punto de basura. Nuestra app detecta tu ubicación y sube el reporte en segundos.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-card__icon">
+                        <i class="fa-solid fa-map"></i>
+                    </div>
+                    <h3 class="step-card__title">2. Visualiza el Mapa</h3>
+                    <p class="step-card__description">Tu reporte se suma a un mapa de calor interactivo, identificando zonas críticas para la comunidad y las autoridades.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-card__icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="step-card__title">3. Gana EcoPuntos</h3>
+                    <p class="step-card__description">Cada reporte validado y limpieza comunitaria te da puntos. Canjéalos por descuentos y productos en negocios aliados.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="video-section">
+            <small>NO SOLO LO LEAS, MÍRALO</small>
+            <h2>Ve el impacto en acción.</h2>
+            <p>Así es como tu reporte se convierte en una acción real. Mira un demo de 2 minutos de TrashTracker en funcionamiento.</p> 
+
+            <article class="video-section__embed-container">
+            </article>
+        </section>
+
+        <section class="rewards-section" id="rewards">
+
+            <article class="rewards-section__content">
+
+                <div class="info">
+                    <small>Tu Diferenciador Clave</small>
+                    <h2>Tus acciones tienen recompensa.</h2>
+                    <p>En TrashTracker, creemos que el esfuerzo debe ser reconocido. No solo cuidas tu ciudad, sino que también apoyas al comercio local y obtienes beneficios reales.</p>
+                </div>
+                
+
+                <ul>
+                    <li><i class="fa-regular fa-circle-check"></i> <span>Gana EcoPuntos</span> por cada reporte validado y por asistir a eventos de limpieza.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> <span>Canjea por descuentos o productos</span> en cafés, restaurantes y tiendas sostenibles aliadas.</li>
+                    <li><i class="fa-regular fa-circle-check"></i> <span>Sube de Nivel</span> y compite amistosamente en el ranking de Eco-Guardianes de tu distrito.</li>
+                </ul>
+
+            </article>
+
+            <article class="rewards-section__showcase">
+
+                <div class="reward-example-card">
+
+                    <div class="reward-example-card__image-details">
+                        <div class="imagen">
+
+                        </div>
+                        <div>
+                            <h3>Bolsa Ecólogica</h3>
+                            <p>Colores: Verde y Mostaza</p>
+                        </div>
+                    </div>
+
+                    <div class="reward-example-card__action">
+                        <div><h4>900 EcoPuntos</h4></div>
+                        <a href="#">Canjear</a>
+                    </div>
+                </div>
+
+                <div class="testimonial-quote">
+                    <i>¡Es increíble! Reporté un basural cerca de mi casa en Chorrillos y a la semana lo limpiaron. Además, ¡ya canjeé mis primeros puntos por un café!</i>
+                    <p class="testimonial-quote__author"><strong>-Miguel Sanca, estudiante</strong></p>
+                </div>
+            </article>
+
+        </section>
+        
+        <section class="faq-section" id="faq">
+            <small>¿Tienes Dudas?</small>
+            <h2>Preguntas Frecuentes</h2>
+            
+            <div class="faq-section__list">
+        
+                <details class="faq-card">
+                    <summary class="faq-card__question">
+                        <span>¿Qué es exactamente TrashTracker?</span>
+                        <span class="faq-card__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card__answer">
+                        <p>
+                            TrashTracker es una plataforma digital (app móvil y web) que conecta a ciudadanos, municipalidades y ONGs. Permite a los ciudadanos reportar focos de basura con fotos y geolocalización, creando un mapa de calor que ayuda a las autoridades a gestionar la limpieza de forma más eficiente.
+                        </p>
+                    </div>
+                </details>
+                
+                <details class="faq-card">
+                    <summary class="faq-card__question">
+                        <span>¿A qué sectores va dirigido?</span>
+                        <span class="faq-card__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card__answer">
+                        <p>Principalmente a tres sectores:</p>
+                        <ul>
+                            <li><strong>Ciudadanos:</strong> Que viven en Lima y desean un barrio más limpio y quieren participar activamente.</li>
+                            <li><strong>Municipalidades:</strong> Que necesitan datos precisos y centralizados para optimizar sus rutas de recojo y limpieza.</li>
+                            <li><strong>ONGs y Colectivos:</strong> Que organizan jornadas de limpieza y buscan voluntarios y puntos de acción.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="faq-card">
+                    <summary class="faq-card__question">
+                        <span>¿Cómo funciona el sistema de EcoPuntos?</span>
+                        <span class="faq-card__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card__answer">
+                        <p>
+                            Es nuestro sistema de gamificación. Ganas EcoPuntos por acciones valiosas, como hacer tu primer reporte, que un reporte sea validado, o asistir a un evento de limpieza comunitaria. Esos puntos se acumulan en tu perfil y puedes canjearlos por recompensas reales, como descuentos en cafés, tiendas sostenibles y otros negocios locales aliados.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-card">
+                    <summary class="faq-card__question">
+                        <span>¿Tiene algún costo para el ciudadano?</span>
+                        <span class="faq-card__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                        </span>
+                    </summary>
+                    <div class="faq-card__answer">
+                        <p>
+                            No. TrashTracker es y siempre será <strong>totalmente gratis</strong> para todos los ciudadanos. Nuestro modelo de sostenibilidad se basa en alianzas con las municipalidades y patrocinios de empresas privadas.
+                        </p>
+                    </div>
+                </details>
+
+            </div> </section>
+        
+        <section class="team-section">
+
+            <small>EL EQUIPO</small>
+            <h2>Conoce a los Eco-Guardianes</h2>
+
+            <article class="team-section__grid">
+                
+                <div class="team-member-card">
+                    <div class="team-member-card__image" id="Yamil">
+                        </div>
+                    <h3 class="team-member-card__name">Yamil Jared Tejada Pumcayo</h3>
+                </div>
+
+                <div class="team-member-card">
+                    <div class="team-member-card__image" id="Luis">
+                        </div>
+                    <h3 class="team-member-card__name">Luis German Tello Quispe</h3>
+                </div>
+                
+                <div class="team-member-card">
+                    <div class="team-member-card__image" id="David">
+                        </div>
+                    <h3 class="team-member-card__name">David Inga Sosa</h3>
+                </div>
+
+                <div class="team-member-card">
+                    <div class="team-member-card__image" id="Drago">
+                        </div>
+                    <h3 class="team-member-card__name">Drago Derick Duarte Ruffner</h3>
+                </div>
+
+                <div class="team-member-card">
+                    <div class="team-member-card__image" id="Manuel">
+                        </div>
+                    <h3 class="team-member-card__name">Manuel Jesus Ramos Silva </h3>
+                </div>
+                
+                <div class="team-member-card">
+                    <div class="team-member-card__image" id="Mauricio">
+                        </div>
+                    <h3 class="team-member-card__name">Mauricio Luis Pajes Leon </h3>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="cta-section"> 
+            <h2>Únete a la comunidad TrahTracker hoy.</h2>
+            <p>Descarga la app, crea tu cuenta gratis y empieza a generar un impacto real en tu comunidad. Cada reporte cuenta.</p>
+
+            <div class="cta-section__action">
+                <a href="#">Comienza Ahora (Es Gratis)</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid"> 
+            <div class="footer-grid__brand"> 
+                <ul>
+                    <li><h3>TrashTracker</h3></li>
+                    <li>Cada reporte cuenta.</li>
+                </ul>
+            </div>
+
+            <div class="footer-grid__nav"> 
+                <h5>NAVEGACIÓN</h5>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#problem">Problema</a></li>
+                    <li><a href="#how-it-works">Funcionamiento</a></li>
+                    <li><a href="#rewards">Recompensas</a></li>
+                    <li><a href="#faq">Preguntas</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-grid__legal">
+                <h5>LEGAL</h5>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-grid__social-app">
+                <h5>SÍGUENOS</h5>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="app-stores">
+                    <div class="app-stores__google">
+                        <a href="https://play.google.com/store/games?hl=es" target="_blank"><img src="Logos App/imgGooglePlay.png" alt="Google Play" width="140px"></a>
+                    </div>
+                    <div class="app-stores__apple">
+                        <a href="https://www.apple.com/la/app-store/" target="_blank"><img src="Logos App/imgAppStore.png" alt="App Store" width="140px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-copyright">
+            <p>&copy; TrashTracker. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
