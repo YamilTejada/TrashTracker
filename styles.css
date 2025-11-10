@@ -145,3 +145,11 @@ small {
     transform: translateY(-3px); 
     box-shadow: 0 5px 15px rgba(63, 184, 114, 0.3);
 }
+
+/* main ======*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-gap);
+}
