@@ -515,3 +515,87 @@ font-weight: bold;
     font-style: italic;
     font-size: 1.1rem;
 }
+
+/* 6.faq-section */
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 60px var(--section-inline-padding);
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+}
+
+.faq-section__list {
+    width: 100%;
+    max-width: 750px; 
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--gray-200);
+    text-align: left;
+    transition: all 300ms ease;
+}
+
+.faq-card:hover {
+    box-shadow: 0 5px 15px rgba(63, 184, 114, 0.1);
+    border-color: var(--eco-accent);
+    transform: translateY(-3px);
+}
+
+.faq-card__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--eco-dark);
+}
+
+/*Parte Importante Preguntas==========================*/
+
+/* Oculta la flecha por defecto del <summary> */
+.faq-card__question::-webkit-details-marker,
+.faq-card__question::marker {
+    display: none;
+    content: '';
+}
+
+.faq-card__arrow {
+    width: 24px;
+    height: 24px;
+    color: var(--eco-accent);
+    transition: transform 300ms ease;
+}
+
+/* Gira la flecha cuando está abierto */
+.faq-card[open] .faq-card__arrow {
+    transform: rotate(180deg);
+}
+
+.faq-card__answer {
+    padding: 0 25px 20px 25px; /* Padding de la respuesta */
+    color: var(--eco-text);
+    line-height: 1.7;
+}
+
+.faq-card__answer ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*===========================================*/
