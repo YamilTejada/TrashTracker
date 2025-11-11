@@ -242,3 +242,91 @@ main{
     color: var(--white);
     transform: translateY(-3px); 
 }
+
+/* 3.how-it-works-section */
+
+.how-it-works-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    background-color: var(--eco-light);
+
+
+    padding: 60px var(--section-inline-padding); 
+}
+
+.how-it-works-section small{
+    color: var(--eco-accent);
+}
+
+.how-it-works-section h2, .how-it-works-section h3{
+    color: var(--eco-dark);
+}
+
+.how-it-works-section__steps-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px; 
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.how-it-works-section__steps-grid .step-card{
+
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
+
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    transition: all 300ms ease;
+}
+
+.how-it-works-section__steps-grid .step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-card__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--eco-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition-duration: 350ms;
+}
+
+.step-card__icon i {
+  font-size: 30px;
+  color: var(--white);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/*Dato: Afecta el hover a otro  elemento*/
+.step-card:hover .step-card__icon {
+  background-color: var(--eco-complement);
+  transform: scale(1.05);
+}
+
+.step-card__icon i {
+  font-size: 30px;
+  color: var(--white);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+.how-it-works-section__steps-grid .step-card:hover .step-card__icon i {
+    transform: scale(1.0);
+}
