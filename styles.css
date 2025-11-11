@@ -599,3 +599,79 @@ font-weight: bold;
 }
 
 /*===========================================*/
+
+/* drago parte-section */
+
+.team-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px var(--section-inline-padding);
+    gap: 30px;
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+}
+
+.team-section .team-section__grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    margin-top: 40px;
+}
+
+.team-section .team-section__grid .team-member-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    transition: all 300ms ease;
+}
+
+.team-section .team-section__grid .team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+
+.team-member-card__image{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto; 
+    border: 5px solid var(--eco-light);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#Yamil{
+    background-image: url(Integrantes/imgYamil.jpg);
+}
+
+#Luis{
+    background-image: url(Integrantes/imgLuis.jpg);
+}
+
+#David{
+    background-image: url(Integrantes/imgDavid.jpg);
+}
+
+#Drago{
+    background-image: url(Integrantes/imgDrago.jpg);
+}
+
+#Manuel{
+    background-image: url(Integrantes/imgManuel.jpg);
+}
+
+#Mauricio{
+    background-image: url(Integrantes/imgMauricio.jpg);
+}
