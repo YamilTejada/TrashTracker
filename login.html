@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - TrashTracker</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://kit.fontawesome.com/40302bbecc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Imagenes/imgLogo.png">
+
+</head>
+
+
+
+
+<body class="login-register-body">
+    <div class="login-header"> 
+        <a href="index.html">
+            <img src="Imagenes/imgLogo.png" alt="TrashTracker Logo"> 
+        </a>
+
+    </div>
+
+    <div class="login-wrapper">
+        <div class="login-form-container">
+            <div class="form-content">
+                <h2>Bienvenido A TrashTracker</h2>
+                <p class="subtitle">Inicie sesión para acceder a su cuenta</p>
+
+                <form>
+
+                 <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Email:" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Contraseña:" required>
+                            <i class="fa-regular fa-eye-slash password-icon"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Recordar</label>
+                        </div>
+
+                        <a href="recuperarcontr.html" class="forgot-password">¿Olvidaste la contraseña?</a>
+
+                    </div>
+
+                    <button type="submit" class="login-btn">LOGIN</button>
+                </form>
+
+                <div class="register-link">
+                    <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+                </div>
+
+                <div class="social-login">
+                    <div class="social-separator">
+                        <span>O inicie sesión con:</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon google"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="social-icon facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-illustration-container">
+            <img src="Imagenes/recogerBasura.png" alt="Personas reciclando">
+        </div>
+    </div>
+</body>
+
+</html>
