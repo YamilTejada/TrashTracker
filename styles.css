@@ -245,6 +245,9 @@ main{
 
 
 
+/* 2.Problem-section */
+
+
 .problem-section{
     display: flex;
     flex-direction: column;
