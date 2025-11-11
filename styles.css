@@ -904,6 +904,34 @@ footer hr {
     margin: 40px 0 0 0;
 }
 
+/* --- RESPONSIVIDAD SIMPLE --- */
+
+@media (max-width: 992px) {
+    /* --- Tablet --- */
+    .problem-section .problem-section__data,
+    .how-it-works-section__steps-grid {
+    flex-direction: column;
+    align-items: center; /* Centra las tarjetas */
+    gap: 30px;
+    }
+
+    .problem-section .problem-section__data .stat-card,
+    .how-it-works-section__steps-grid .step-card {
+    max-width: 450px; /* Tarjetas ocupan más ancho */
+    width: 100%;
+    }
+
+    .rewards-section {
+    flex-direction: column;
+    gap: 40px;
+    }
+    }
+
+    .footer-copyright small{
+        color: var(--eco-light);
+    }
+
+
 @media (max-width: 768px) {
 
     h1 { font-size: 2.2rem; }
@@ -1029,3 +1057,4 @@ footer hr {
     }
     
 }
+
