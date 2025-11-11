@@ -330,3 +330,56 @@ main{
 .how-it-works-section__steps-grid .step-card:hover .step-card__icon i {
     transform: scale(1.0);
 }
+
+/* 4.video-section */
+
+.video-section{
+    background-color: var(--eco-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 60px var(--section-inline-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.video-section small{
+    color: var(--eco-accent);
+}
+
+.video-section h2 { 
+    color: var(--white);
+}
+
+.video-section p {
+    color: var(--gray-200);
+    max-width: 600px;
+}
+
+
+.video-section__embed-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+    min-height: 400px; 
+    background-color: #000;
+    border-radius: 15px;
+    border: 3px solid var(--eco-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.video-section__embed-container::before {
+    content: '►';
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 300ms ease;
+}
+.video-section__embed-container:hover::before {
+    color: var(--white);
+    transform: scale(1.15);
+}
