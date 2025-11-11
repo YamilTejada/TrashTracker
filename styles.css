@@ -383,3 +383,135 @@ main{
     color: var(--white);
     transform: scale(1.15);
 }
+
+/* 5.rewards-section */ 
+
+.rewards-section{
+    display: flex;
+    flex-direction: row;
+
+    padding: 60px var(--section-inline-padding);
+    gap: clamp(40px, 6vw, 80px); 
+    align-items: stretch;
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+
+}
+
+.rewards-section__content{
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    gap: 25px;
+    flex: 1; 
+}
+
+.rewards-section__content s{
+    color: var(--eco-accent);
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.rewards-section__content h2{
+    color: var(--eco-dark);
+}
+
+.rewards-section__content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.rewards-section__content ul li i{
+color: var(--eco-accent);
+font-size: 1.2rem;
+}
+
+.rewards-section__content ul li span{
+font-weight: bold;
+}
+
+.rewards-section__showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1; 
+    min-width: 300px;
+}
+
+.reward-example-card{
+
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 300ms ease;
+
+}
+
+.reward-example-card:hover {
+    transform: translateY(-5px);
+}
+
+.reward-example-card__image-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reward-example-card__image-details .imagen{
+    background-image: url(Imagenes/imgBolsa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    border-radius: 15px;
+}
+
+.reward-example-card__action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reward-example-card__action h4{
+    color: var(--eco-accent);
+    font-size: 1.2rem;
+}
+.reward-example-card__action a{
+    color: var(--eco-accent);
+}
+
+.reward-example-card__action a{
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition-duration: 300ms;
+    background-color: #CFEDDC;
+    font-weight: 700;
+}
+
+.reward-example-card__action a:hover{
+    background-color: var(--eco-accent);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+
+.testimonial-quote{
+    background-color: #0e280b;
+    color: white;
+    border-radius: 15px;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: var(--shadow-lg);
+    font-style: italic;
+    font-size: 1.1rem;
+}
