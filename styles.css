@@ -675,3 +675,43 @@ font-weight: bold;
 #Mauricio{
     background-image: url(Integrantes/imgMauricio.jpg);
 }
+
+/* drago cta-section */
+
+.cta-section{
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center; 
+gap: 20px;
+background-color: var(--eco-dark);
+color: white;
+padding: 60px var(--section-inline-padding);
+
+}
+.cta-section h2 {
+    color: var(--white);
+}
+.cta-section p {
+    color: var(--gray-200);
+    max-width: 500px;
+}
+
+.cta-section a{
+    display: inline-block;
+    padding: 15px 40px; 
+    background-color: var(--eco-accent);
+    color: white;
+    transition-duration: 300ms;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.cta-section a:hover{
+background-color: var(--eco-accent);
+color: white;
+transform: translateY(-3px);
+box-shadow: 0 6px 25px 0px var(--eco-accent); 
+}
