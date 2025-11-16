@@ -171,7 +171,7 @@ main{
         #f4fbf2a1,   
         rgba(255, 255, 255, 0)   
         ),
-    url(Imagenes/imgSection.jpg);
+    url(../Imagenes/imgSection.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -546,7 +546,7 @@ font-weight: bold;
 }
 
 .reward-example-card__image-details .imagen{
-    background-image: url(Imagenes/imgBolsa.png);
+    background-image: url(../Imagenes/imgBolsa.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -734,27 +734,27 @@ font-weight: bold;
 }
 
 #Yamil{
-    background-image: url(Integrantes/imgYamil.jpg);
+    background-image: url(../Integrantes/imgYamil.jpg);
 }
 
 #Luis{
-    background-image: url(Integrantes/imgLuis.jpg);
+    background-image: url(../Integrantes/imgLuis.jpg);
 }
 
 #David{
-    background-image: url(Integrantes/imgDavid.jpg);
+    background-image: url(../Integrantes/imgDavid.jpg);
 }
 
 #Drago{
-    background-image: url(Integrantes/imgDrago.jpg);
+    background-image: url(../Integrantes/imgDrago.jpg);
 }
 
 #Manuel{
-    background-image: url(Integrantes/imgManuel.jpg);
+    background-image: url(../Integrantes/imgManuel.jpg);
 }
 
 #Mauricio{
-    background-image: url(Integrantes/imgMauricio.jpg);
+    background-image: url(../Integrantes/imgMauricio.jpg);
 }
 
 /* drago cta-section */
