@@ -171,7 +171,7 @@ main{
         #f4fbf2a1,   
         rgba(255, 255, 255, 0)   
         ),
-    url(Imagenes/imgSection.jpg);
+    url(../Imagenes/imgSection.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -320,6 +320,7 @@ main{
 .problem-section .problem-section__info2 span{
     color: var(--eco-accent);
     font-weight: 700;
+
 }
 
 
@@ -545,7 +546,7 @@ font-weight: bold;
 }
 
 .reward-example-card__image-details .imagen{
-    background-image: url(Imagenes/imgBolsa.png);
+    background-image: url(../Imagenes/imgBolsa.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -733,27 +734,27 @@ font-weight: bold;
 }
 
 #Yamil{
-    background-image: url(Integrantes/imgYamil.jpg);
+    background-image: url(../Integrantes/imgYamil.jpg);
 }
 
 #Luis{
-    background-image: url(Integrantes/imgLuis.jpg);
+    background-image: url(../Integrantes/imgLuis.jpg);
 }
 
 #David{
-    background-image: url(Integrantes/imgDavid.jpg);
+    background-image: url(../Integrantes/imgDavid.jpg);
 }
 
 #Drago{
-    background-image: url(Integrantes/imgDrago.jpg);
+    background-image: url(../Integrantes/imgDrago.jpg);
 }
 
 #Manuel{
-    background-image: url(Integrantes/imgManuel.jpg);
+    background-image: url(../Integrantes/imgManuel.jpg);
 }
 
 #Mauricio{
-    background-image: url(Integrantes/imgMauricio.jpg);
+    background-image: url(../Integrantes/imgMauricio.jpg);
 }
 
 /* drago cta-section */
@@ -903,6 +904,34 @@ footer hr {
     margin: 40px 0 0 0;
 }
 
+/* --- RESPONSIVIDAD SIMPLE --- */
+
+@media (max-width: 992px) {
+    /* --- Tablet --- */
+    .problem-section .problem-section__data,
+    .how-it-works-section__steps-grid {
+    flex-direction: column;
+    align-items: center; /* Centra las tarjetas */
+    gap: 30px;
+    }
+
+    .problem-section .problem-section__data .stat-card,
+    .how-it-works-section__steps-grid .step-card {
+    max-width: 450px; /* Tarjetas ocupan más ancho */
+    width: 100%;
+    }
+
+    .rewards-section {
+    flex-direction: column;
+    gap: 40px;
+    }
+    }
+
+    .footer-copyright small{
+        color: var(--eco-light);
+    }
+
+
 @media (max-width: 768px) {
 
     h1 { font-size: 2.2rem; }
@@ -1028,3 +1057,4 @@ footer hr {
     }
     
 }
+
