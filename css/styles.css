@@ -597,7 +597,83 @@ font-weight: bold;
     font-size: 1.1rem;
 }
 
-/* 6.faq-section */
+/* 6.map-section */
+
+.map-section {
+    background-color: var(--eco-light);
+    padding: 60px var(--section-inline-padding);
+}
+
+.map-section__grid {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: clamp(30px, 5vw, 80px);
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+}
+
+.map-section__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map-section__info p {
+    max-width: 520px;
+}
+
+.map-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.map-legend li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.map-legend__dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.map-legend__dot.is-critical {
+    background-color: #e50a17;
+}
+
+.map-legend__dot.is-progress {
+    background-color: #f6c343;
+}
+
+.map-legend__dot.is-cleanup {
+    background-color: #3fb872;
+}
+
+.map-section__map {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    min-height: 380px;
+}
+
+#report-map {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border-radius: 20px;
+    border: 3px solid var(--eco-accent);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+/* 7.faq-section */
 
 .faq-section {
     display: flex;
@@ -925,6 +1001,10 @@ footer hr {
     flex-direction: column;
     gap: 40px;
     }
+
+    .map-section__grid {
+    flex-direction: column;
+    }
     }
 
     .footer-copyright small{
@@ -1025,6 +1105,26 @@ footer hr {
 
     .main-header__actions ul {
         padding-top: 20px; /* Separa los botones de la nav */
+    }
+
+    .map-section {
+        text-align: center;
+    }
+
+    .map-section__info {
+        align-items: center;
+    }
+
+    .map-legend li {
+        justify-content: center;
+    }
+
+    .map-section__map {
+        width: 100%;
+    }
+
+    #report-map {
+        min-height: 320px;
     }
 
     .hero-section {
