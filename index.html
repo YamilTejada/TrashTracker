@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <title>TrashTracker</title>
     <script src="https://kit.fontawesome.com/40302bbecc.js" crossorigin="anonymous"></script>
     <link rel="icon" href="Imagenes/imgLogo.png">
@@ -201,6 +202,24 @@
             </article>
 
         </section>
+
+        <section class="map-section" id="impact-map">
+            <div class="map-section__grid">
+                <article class="map-section__info">
+                    <small>Visualiza el Problema</small>
+                    <h2>Mapa interactivo de reportes ciudadanos</h2>
+                    <p>Explora en qué zonas se concentran los focos de basura y descubre dónde la comunidad ya organizó limpiezas. Actualizaremos estos puntos en tiempo real con cada reporte validado.</p>
+                    <ul class="map-legend">
+                        <li><span class="map-legend__dot is-critical"></span>Zona crítica reportada recientemente</li>
+                        <li><span class="map-legend__dot is-progress"></span>Reporte en proceso</li>
+                        <li><span class="map-legend__dot is-cleanup"></span>Limpieza comunitaria resuelta</li>
+                    </ul>
+                </article>
+                <div class="map-section__map">
+                    <div id="report-map" role="region" aria-label="Mapa interactivo de focos de basura"></div>
+                </div>
+            </div>
+        </section>
         
         <section class="faq-section" id="faq">
             <small>¿Tienes Dudas?</small>
@@ -385,6 +404,7 @@
 
     <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2025/11/09/14/20251109142458-Q9ZMUEL8.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="js/script.js"></script>
 
 </body>
