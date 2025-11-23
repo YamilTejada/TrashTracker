@@ -755,6 +755,125 @@ font-weight: bold;
     gap: 5px;
 }
 
+
+/* 8. TESTIMONIALS SECTION */
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px var(--section-inline-padding);
+    max-width: var(--layout-max-width);
+    margin: 0 auto;
+    background-color: var(--white);
+    /* Opcional: un fondo muy sutil si quieres diferenciarlo del blanco puro */
+    /* background-color: var(--gray-100); */
+}
+
+.testimonials-info {
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.testimonials-info h2 {
+    margin-bottom: 10px;
+}
+
+/* GRID SYSTEM: Hace que las tarjetas se acomoden solas */
+.testimonials-grid {
+    display: grid;
+    /* Esto crea columnas automáticas. Mínimo 300px de ancho, si no caben, bajan */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+/* DISEÑO DE LA TARJETA */
+.review-card {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto Hover: Sube un poco y brilla el borde */
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--eco-accent);
+}
+
+/* HEADER DE LA TARJETA (Foto + Nombre + Estrellas) */
+.review-card__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid var(--gray-100);
+    padding-bottom: 15px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0; /* Evita que se aplaste */
+}
+
+.user-info {
+    flex: 1; /* Toma el espacio disponible */
+}
+
+.user-info h3 {
+    font-size: 1rem;
+    color: var(--eco-dark);
+    margin-bottom: 2px;
+}
+
+.user-info span {
+    font-size: 0.85rem;
+    color: #777;
+    display: block;
+}
+
+.stars {
+    color: #ffc107; /* Color dorado para estrellas */
+    font-size: 0.8rem;
+}
+
+/* CUERPO DE LA TARJETA (Texto) */
+.review-card__body {
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 1.5rem;
+    color: var(--eco-accent);
+    opacity: 0.2; /* Un poco transparente */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.review-card__body p {
+    font-style: italic;
+    color: var(--eco-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /*===========================================*/
 
 /* drago parte-section */
@@ -1138,6 +1257,17 @@ footer hr {
     .hero-section__content .hero-section__actions ul {
         justify-content: center;
         flex-wrap: wrap; /* Para que los botones se apilen */
+    }
+
+
+    .review-card__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .stars {
+        margin-top: 5px;
     }
 
 
