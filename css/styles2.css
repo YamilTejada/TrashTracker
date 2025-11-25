@@ -262,6 +262,12 @@
         position: relative;
         overflow: hidden;
         border-left: 1px solid var(--gray-200);
+
+        background:  linear-gradient(to top, #3fb87149 , rgba(255, 255, 255, 0)) ,  url(../Imagenes/imgSection2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
     }
 
     .login-illustration-container img {
