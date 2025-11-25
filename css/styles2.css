@@ -287,3 +287,44 @@
             padding: 40px 25px;
         }
     }
+
+    /*HTML (Login)*/
+
+     .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        
+        .remember-me input[type="checkbox"] {
+            accent-color: var(--eco-accent); /* Checkbox verde */
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        .remember-me label {
+            margin-bottom: 0;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            color: var(--eco-accent);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .forgot-password:hover {
+            color: var(--eco-dark);
+            text-decoration: underline;
+        }
