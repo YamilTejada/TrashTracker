@@ -439,30 +439,35 @@ main{
 }
 
 
+
 .video-section__embed-container {
     width: 100%;
-    max-width: 800px;
-    margin-top: 30px;
-    min-height: 400px; 
+    max-width: 900px; 
+    margin: 40px auto 0; 
+    
+    aspect-ratio: 16 / 9; 
+    
     background-color: #000;
-    border-radius: 15px;
-    border: 3px solid var(--eco-accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden; 
+    border: 2px solid var(--eco-accent);
+    box-shadow: 0 20px 40px var(--shadow-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-section__embed-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 
-.video-section__embed-container::before {
-    content: '►';
-    font-size: 70px;
-    color: rgba(255, 255, 255, 0.8);
-    transition: all 300ms ease;
-}
-.video-section__embed-container:hover::before {
-    color: var(--white);
-    transform: scale(1.15);
+.video-section__embed-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35), 
+                0 0 40px #3fb87175; 
+
+    border-color: var(--eco-accent);
 }
 
 /* 5.rewards-section */ 

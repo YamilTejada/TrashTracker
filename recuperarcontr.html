@@ -12,32 +12,41 @@
 
 
 <body class="login-register-body">
-    <div class="login-header"> 
-        <a href="login.html">
-            <img src="Imagenes/imgLogo.png" alt="TrashTracker Logo"> 
-        </a>
-    </div>
+
     <div class="login-wrapper">
 
+        <!-- Lado Izquierdo: Formulario -->
         <div class="login-form-container"> 
+            <div class="login-header"> 
+                <a href="login.html">
+                    <img src="Imagenes/imgLogo.png" alt="TrashTracker Logo"> 
+                </a>
+            </div>
+
             <div class="form-content">
                 <h2>¿Olvidaste tu Contraseña?</h2>
                 <p class="subtitle">Ingresa tu correo y te enviaremos un enlace para recuperarla</p>
-                <form>
+
+                <form action="#">
                     <div class="form-group">
                         <label for="email">Correo electrónico de recuperación</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
                     </div>
+
                     <button type="submit" class="login-btn">Enviar Enlace</button>
                 </form>
+
                 <div class="register-link">
                     <p>¿Recordaste tu contraseña? <a href="login.html">Inicia Sesión</a></p>
                 </div>
             </div>
         </div>
+
+        <!-- Lado Derecho: Ilustración -->
         <div class="login-illustration-container">
-            <img src="Imagenes/recogerBasura.png" alt="Personas reciclando">
+
         </div>
+        
     </div>
 </body>
 </html>
