@@ -60,17 +60,18 @@ Esta es la estructura de carpetas requerida para el challenge de la Landing Page
 ```plaintext
 /landing-page
 │
-├── public/
-│   ├── assets/
-│   │   ├── styles/
-│   │   ├── images/
-│   │   ├── scripts/
-│   ├── index.html
-│   └── login.html
-|   └── recuperacontra.html
-│   └── registro.html
+├── assets/
+│   ├── css/
+│   ├── img/
+│   │   ├── integrantes/
+│   │   └── ui/
+│   └── js/
 │
-└── README.md
+├── index.html
+├── login.html
+├── README.md
+├── recuperar-pasword.html
+└── registro.html
 ```
 
 Despliegue 🌍
